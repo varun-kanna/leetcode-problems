@@ -5,10 +5,9 @@ class Solution(object):
         :rtype: int
         """
         profit = 0
-        lowest = prices[0]
+        minimum = prices[0]
         for price in prices:
-            if price < lowest:
-                lowest = price
-            else:
-                profit = max(profit, price- lowest)
+            if price < minimum:
+                minimum = price
+            profit = max(profit, price-minimum)
         return profit
