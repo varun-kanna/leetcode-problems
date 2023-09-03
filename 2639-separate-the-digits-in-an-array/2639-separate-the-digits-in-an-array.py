@@ -4,12 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        nums_str = ""
-        for i in nums:
-            nums_str += str(i)
-        print(nums_str)
-        final_list = []
-        for j in range(len(nums_str)):
-            final_list.append(int(nums_str[j]))
-        print(final_list)
-        return final_list
+        res=[]
+        for x in nums:
+            t=[]
+            while x>0:
+                t.insert(0,x%10)
+                x=x//10
+            res+=t
+        return res
