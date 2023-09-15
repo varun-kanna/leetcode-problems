@@ -4,9 +4,8 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O" , "U"]
+        vowels = "aeiouAEIOU"
         list_words = list(s)
-        print(list_words)
 
         left, right = 0, len(list_words) - 1
 
