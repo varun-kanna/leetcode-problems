@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: str
         """
         vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O" , "U"]
-        list_words = [str(word) for word in s]
+        list_words = list(s)
         print(list_words)
 
         left, right = 0, len(list_words) - 1
