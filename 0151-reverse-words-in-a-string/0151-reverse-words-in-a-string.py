@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        words = s.strip().split()
+        words = s.split()
         left = 0
         right = len(words) - 1
         while left <= right:
