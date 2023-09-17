@@ -23,7 +23,7 @@ class Solution(object):
                 for c in str(count):
                     chars[walker+1] = c
                     walker += 1
-            # We increase both the walker and runner pointers by 1 to adjust the walker for the NEXT CHARACTER
+            # We increase both the walker and runner pointers by 1 
             walker += 1
             runner += 1
         # Walker wil be the pointer of the last digit or character, which is the length of the array
