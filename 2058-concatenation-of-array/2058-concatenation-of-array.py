@@ -5,3 +5,4 @@ class Solution(object):
         :rtype: List[int]
         """
         return nums + nums
+        
